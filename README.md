@@ -14,15 +14,29 @@ OR
 
     npm install konexmedia/race
 
-## Usage
+## Usage example
 
     var race = require('race');
 
     race([
-    
+        function daFirst (callback) {
+            setTimeout(function () {
+                callback(null, 1);
+            }, 200);
+        },
+        function daSecond (callback) {
+            setTimeout(function () {
+                callback(null, 'ehlo');
+            }, 100);        
+        }
     ])
     .finish(function (err, results) {
+        if (err) {
+            return console.error(err);
+        }
         
+        console.log(results.daFirst); => 1
+        console.log(results.daSecond); => 'ehlo'
     });
 
 ## Author
