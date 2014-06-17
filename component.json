@@ -1,7 +1,7 @@
 {
   "name": "race",
   "version": "1.0.0-beta",
-  "description": "Runs separate functions in parallel and collects the results.",
+  "description": "Control flow component for executing functions concurrently.",
   "author": {
     "name": "André König",
     "email": "andre.koenig@konexmedia.com"

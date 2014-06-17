@@ -1,6 +1,8 @@
 # race
 
-Runs separate functions in parallel and collects the results. Usable in a browser or node.js environment.
+Control flow component for executing functions concurrently. Usable in a browser or node.js environment.
+
+The functionality is like the one from [async.parallel](https://github.com/caolan/async#parallel) but without all the other functions.
 
 ## Installation
 
