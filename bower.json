@@ -1,0 +1,22 @@
+{
+  "name": "race",
+  "description": "Runs separate functions in parallel and collects the results.",
+  "author": {
+    "name": "André König",
+    "email": "andre.koenig@konexmedia.com"
+  },
+  "version": "1.0.0",
+  "repository": {
+    "url": "git@github.com:konexmedia/race.git"
+  },
+  "license": "MIT",
+  "main": "./dist/race.min.js",
+  "ignore": [
+      "**/.*",
+      "node_modules",
+      "index.spec.js",
+      "gulpfile.js",
+      "package.json",
+      "index.js"
+  ]
+}
