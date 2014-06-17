@@ -1,10 +1,10 @@
 {
   "name": "race",
+  "version": "1.0.0-beta",
   "description": "Runs separate functions in parallel and collects the results.",
   "author": {
     "name": "André König",
     "email": "andre.koenig@konexmedia.com"
   },
-  "version": "1.0.0",
   "scripts": ["index.js"]
 }

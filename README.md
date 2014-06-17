@@ -1,6 +1,6 @@
 # race
 
-Runs separate functions in parallel and collects the results.
+Runs separate functions in parallel and collects the results. Usable in a browser or node.js environment.
 
 ## Installation
 
@@ -15,6 +15,8 @@ OR
     npm install konexmedia/race
 
 ## Usage
+
+    var race = require('race');
 
     race([
     
