@@ -1,0 +1,14 @@
+{
+  "name": "race",
+  "description": "Runs separate functions in parallel and collects the results.",
+  "author": {
+    "name": "André König",
+    "email": "andre.koenig@konexmedia.com"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.8.0",
+    "gulp-component": "^0.1.8"
+  }
+}
