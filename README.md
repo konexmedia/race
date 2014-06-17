@@ -16,7 +16,7 @@ OR
 
 ## Usage
 
-    sink([
+    race([
     
     ])
     .finish(function (err, results) {
