@@ -1,4 +1,4 @@
-# race
+# race [![Build Status](https://travis-ci.org/konexmedia/race.svg?branch=master)](https://travis-ci.org/konexmedia/race)
 
 Control flow component for executing functions concurrently. Usable in a browser or node.js environment.
 
