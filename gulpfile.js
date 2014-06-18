@@ -14,7 +14,7 @@
 'use strict';
 
 var gulp = require('gulp');
-var component = require('gulp-component');
+var browserify = require('gulp-browserify');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var jshint = require('gulp-jshint');
@@ -48,10 +48,10 @@ gulp.task('test', function () {
         .pipe(jasmine());
 });
 
-gulp.task('component:build', function () {
-    return gulp.src('./component.json')
-        .pipe(component({
-            standalone: pkg.name
+gulp.task('browserify:build', function () {
+    return gulp.src(paths.sources[0])
+        .pipe(browserify({
+            standalone: 'konexmedia.' + pkg.name
         }))
         .pipe(rename(pkg.name + '.min.js'))
         .pipe(uglify())
@@ -59,6 +59,6 @@ gulp.task('component:build', function () {
         .pipe(gulp.dest(paths.component));
 });
 
-gulp.task('build', ['lint', 'test', 'component:build']);
+gulp.task('build', ['lint', 'test', 'browserify:build']);
 
 gulp.task('default', ['build']);
