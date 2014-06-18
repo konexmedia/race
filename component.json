@@ -1,0 +1,10 @@
+{
+  "name": "race",
+  "version": "1.0.0-beta",
+  "description": "Control flow component for executing functions concurrently.",
+  "author": {
+    "name": "André König",
+    "email": "andre.koenig@konexmedia.com"
+  },
+  "scripts": ["index.js"]
+}

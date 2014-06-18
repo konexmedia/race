@@ -17,6 +17,9 @@
     "gulp-jshint": "^1.6.3",
     "gulp-rename": "^1.2.0",
     "gulp-uglify": "^0.3.0",
-    "gulp-webmake": "0.0.1"
+    "run-sequence": "^0.3.6"
+  },
+  "dependencies": {
+    "gulp-component": "^0.1.8"
   }
 }

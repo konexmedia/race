@@ -14,7 +14,7 @@
 'use strict';
 
 var gulp = require('gulp');
-var webmake = require('gulp-webmake');
+var component = require('gulp-component');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var jshint = require('gulp-jshint');
@@ -48,15 +48,17 @@ gulp.task('test', function () {
         .pipe(jasmine());
 });
 
-gulp.task('webmake:build', function () {
-    return gulp.src('./index.js')
-        .pipe(webmake())
+gulp.task('component:build', function () {
+    return gulp.src('./component.json')
+        .pipe(component({
+            standalone: pkg.name
+        }))
         .pipe(rename(pkg.name + '.min.js'))
         .pipe(uglify())
         .pipe(header(banner, {pkg : pkg}))
         .pipe(gulp.dest(paths.component));
 });
 
-gulp.task('build', ['lint', 'test', 'webmake:build']);
+gulp.task('build', ['lint', 'test', 'component:build']);
 
 gulp.task('default', ['build']);
