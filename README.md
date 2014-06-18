@@ -7,10 +7,6 @@ The functionality is like the one from [async.parallel](https://github.com/caola
 ## Installation
 
     bower install konexmedia/race
-    
-OR
-
-    component install konexmedia/race
 
 OR
 
@@ -19,7 +15,7 @@ OR
 ## Usage example
 
 ```javascript
-var race = require('race');
+var race = require('race'); // Browser: var race = konexmedia.race;
 
 race([
     function daFirst (callback) {
