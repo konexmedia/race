@@ -1,8 +1,8 @@
 # race [![Build Status](https://travis-ci.org/konexmedia/race.svg?branch=master)](https://travis-ci.org/konexmedia/race)
 
-Control flow component for executing functions concurrently. Usable in a browser or node.js environment.
+Control flow component for executing functions concurrently. Usable in a browser or Node.js environment.
 
-The functionality is like the one from [async.parallel](https://github.com/caolan/async#parallel) but without all the other functions.
+The motivation was to handle the parallel execution of functions without depending on a control flow library like [async]((https://github.com/caolan/async).
 
 ## Installation
 
