@@ -2,7 +2,7 @@
 
 Control flow component for executing functions concurrently. Usable in a browser or Node.js environment.
 
-The motivation was to handle the parallel execution of functions without depending on a control flow library like [async]((https://github.com/caolan/async).
+The motivation was to handle the parallel execution of functions without depending on a control flow library like [async](https://github.com/caolan/async).
 
 ## Installation
 
